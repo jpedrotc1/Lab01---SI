@@ -10,5 +10,16 @@ public class Algorithms {
 		}
 		
 		return maximum;
-	}	
+	}
+	
+	public int findMinimum(int[] array){
+		int minimum = array[0];
+		for (int i = 0; i < array.length; i++){
+			if(array[i] < minimum)
+				minimum = array[i];
+		}
+		
+		return minimum;
+	}
+	
 }
